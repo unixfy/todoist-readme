@@ -109,9 +109,9 @@ const buildReadme = (prevReadmeContent, newReadmeContent) => {
 
 const commitReadme = async () => {
   // Getting config
-  const committerUsername = "Abhishek Naidu";
-  const committerEmail = "example@gmail.com";
-  const commitMessage = "Todoist updated.";
+  const committerUsername = "github-actions";
+  const committerEmail = "github-actions@github.com";
+  const commitMessage = "Update Todoist stats (automated)";
   // Doing commit and push
   await exec("git", ["config", "--global", "user.email", committerEmail]);
   await exec("git", ["config", "--global", "user.name", committerUsername]);
