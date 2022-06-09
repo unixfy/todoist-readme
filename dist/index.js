@@ -563,8 +563,8 @@ async function updateReadme(data) {
 
   const commitReadme = async () => {
     // Getting config
-    const committerUsername = 'github-actions';
-    const committerEmail = 'github-actions@github.com';
+    const committerUsername = 'github-actions[bot]';
+    const committerEmail = '41898282+github-actions[bot]@users.noreply.github.com';
     const commitMessage = 'Update Todoist stats (automated)';
     // Doing commit and push
     await exec('git', [
