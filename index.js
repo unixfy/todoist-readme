@@ -9,7 +9,12 @@ const PREMIUM = core.getInput("PREMIUM");
 
 async function main() {
   const stats = await axios(
-    `https://api.todoist.com/sync/v9/completed/get_stats?token=${TODOIST_API_KEY}`
+    "https://api.todoist.com/sync/v9/completed/get_stats", 
+    {
+      headers: {
+        "Authorization": `Bearer ${TODOIST_API_KEY}`,
+      }
+    }
   );
   await updateReadme(stats.data);
 }
