@@ -462,7 +462,7 @@ const PREMIUM = core.getInput("PREMIUM");
 
 async function main() {
   const stats = await axios(
-    "https://api.todoist.com/sync/v9/completed/get_stats", 
+    "https://api.todoist.com/api/v1/tasks/completed/stats", 
     {
       headers: {
         "Authorization": `Bearer ${TODOIST_API_KEY}`,
